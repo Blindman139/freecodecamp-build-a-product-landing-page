@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media screen and (max-width: 1000px) {
+      body #header {
+        flex-direction: column;
+        display: flex;
+      }
+
+      body #header #nav-bar {
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: auto
+      }
+
+      body #header #nav-bar .nav-link {
+        width: 100%;
+        justify-content: center;
+        height: 50px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacbUP9aGyJ8YGo8ROqVG9uq8oyD-SDw3lpQ&usqp=CAU'
+      alt="company-logo" id="header-img">
+    <nav id="nav-bar">
+      <a href="#video" class="nav-link">Video</a>
+      <a href="#form" class="nav-link">Contact</a>
+      <a href="#video" class="nav-link">Footer</a>
+    </nav>
+  </header>
+
+  <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
+    frameborder="0"></iframe>
+
+  <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+    <input type="email" id="email" name="email" placeholder="E-mail">
+    <input type="submit" value="Submit" id="submit">
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
